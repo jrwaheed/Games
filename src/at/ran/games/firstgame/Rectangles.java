@@ -38,14 +38,14 @@ public class Rectangles extends BasicGame {
 
         if (this.yCircle1 != 500 && flipDownCircle1 == false) {
             this.yCircle1++;
-            if(this.yCircle1 == 500){
+            if (this.yCircle1 == 500) {
                 flipDownCircle1 = true;
             }
         }
 
         if (this.yCircle1 != 100 && flipDownCircle1 == true) {
             this.yCircle1--;
-            if(this.yCircle1 == 100){
+            if (this.yCircle1 == 100) {
                 flipDownCircle1 = false;
             }
         }
@@ -53,58 +53,49 @@ public class Rectangles extends BasicGame {
 
         if (this.xCircle2 != 550 && flipLeftCircle2 == false) {
             this.xCircle2++;
-            if(this.xCircle2 == 550){
+            if (this.xCircle2 == 550) {
                 flipLeftCircle2 = true;
             }
         }
 
         if (this.xCircle2 != 150 && flipLeftCircle2 == true) {
             this.xCircle2--;
-            if(this.xCircle2 == 150){
+            if (this.xCircle2 == 150) {
                 flipLeftCircle2 = false;
             }
         }
 
         if (this.xSquare != 400 && squareDirection == DIRECTION.RIGHT) {
             this.xSquare = this.xSquare + 10;
-            if(this.xSquare == 400){
+            if (this.xSquare == 400) {
                 squareDirection = DIRECTION.DOWN;
             }
         }
         if (this.ySquare != 400 && squareDirection == DIRECTION.DOWN) {
             this.ySquare++;
-            if(this.ySquare == 400){
+            if (this.ySquare == 400) {
                 squareDirection = DIRECTION.LEFT;
             }
         }
 
         if (this.xSquare != 200 && squareDirection == DIRECTION.LEFT) {
             this.xSquare = this.xSquare - .5f;
-            if(this.xSquare == 200){
+            if (this.xSquare == 200) {
                 squareDirection = DIRECTION.UP;
             }
         }
 
         if (this.ySquare != 200 && squareDirection == DIRECTION.UP) {
             this.ySquare--;
-            if(this.ySquare == 200){
+            if (this.ySquare == 200) {
                 squareDirection = DIRECTION.RIGHT;
             }
         }
 
-
-
     }
 
+//     this.x += (float) delta/this.speed;
 
-
-
-/*
-
-
-
-     this.x += (float) delta/this.speed;
-*/
 
 
 
