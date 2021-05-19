@@ -22,7 +22,7 @@ public class StarTrek extends BasicGame {
         Random random = new Random();
 
         for (int i = 0; i < 10; i++) {
-            Rectangle rectangle = new Rectangle(random.nextInt(600), random.nextInt(600), random.nextInt(50));
+            Rectangle rectangle = new Rectangle(random.nextInt(600), random.nextInt(600), 50);
             actorsList.add(rectangle);
         }
 
