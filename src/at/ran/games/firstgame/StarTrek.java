@@ -2,8 +2,14 @@ package at.ran.games.firstgame;
 
 import org.newdawn.slick.*;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Random;
+
 public class StarTrek extends BasicGame {
-    private Rectangle rectangle;
+    private List<Actor> actorsList;
+
 
     public StarTrek(String title) {
         super(title);
@@ -11,29 +17,50 @@ public class StarTrek extends BasicGame {
 
     @Override
     public void init(GameContainer gameContainer) throws SlickException {
-        this.rectangle = new Rectangle(100, 100, 5);
+        this.actorsList = new ArrayList<>();
+
+        Random random = new Random();
+
+        for (int i = 0; i < 10; i++) {
+            Rectangle rectangle = new Rectangle(random.nextInt(600), random.nextInt(600), random.nextInt(50));
+            actorsList.add(rectangle);
+        }
+
+        for (int i = 0; i < 10; i++) {
+            Circle circle = new Circle();
+            actorsList.add(circle);
+        }
+
+        for (int i = 0; i < 10; i++) {
+            Ellipse ellipse = new Ellipse(random.nextInt(600), random.nextInt(600));
+            actorsList.add(ellipse);
+        }
     }
 
     @Override
     public void update(GameContainer gameContainer, int delta) throws SlickException {
 
-        this.rectangle.update(delta);
-
+        for (Actor actor:this.actorsList) {
+            actor.update(delta);
+        }
     }
 
 
     @Override
     public void render(GameContainer gameContainer, Graphics graphics) throws SlickException {
-        this.rectangle.render(graphics);
-    }
-
-    public static void main(String[] argv) {
-        try {
-            AppGameContainer container = new AppGameContainer(new FirstShapes("Rectangles"));
-            container.setDisplayMode(800,600,false);
-            container.start();
-        } catch (SlickException e) {
-            e.printStackTrace();
+        for (Actor actor: this.actorsList) {
+            actor.render(graphics);
         }
     }
-}
+
+        public static void main (String[] argv){
+            try {
+                AppGameContainer container = new AppGameContainer(new StarTrek("Rectangles"));
+                container.setDisplayMode(800, 600, false);
+                container.start();
+            } catch (SlickException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
