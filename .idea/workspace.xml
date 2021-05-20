@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Stars">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Ellipse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/snowworld/ActorSnowWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/snowworld/BigSnowflake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/snowworld/MediumSnowflake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/snowworld/SmallSnowflake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/snowworld/Snowworld.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgame/StarTrek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/StarTrek.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,20 +53,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.StarTrek">
-    <configuration name="AlphaMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.newdawn.slick.tests.AlphaMapTest" />
-      <module name="Slick2DTemplate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.newdawn.slick.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="at.ran.games.snowworld" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Snowworld">
     <configuration name="AnimationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.newdawn.slick.tests.AnimationTest" />
       <module name="Slick2DTemplate" />
@@ -95,6 +85,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Snowworld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.ran.games.snowworld.Snowworld" />
+      <module name="Slick2DTemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.ran.games.snowworld.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StarTrek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="at.ran.games.firstgame.StarTrek" />
       <module name="Slick2DTemplate" />
@@ -108,12 +111,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testShapes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.ran.games.firstgame.testShapes" />
+      <module name="Slick2DTemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.ran.games.firstgame.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Snowworld" />
         <item itemvalue="Application.StarTrek" />
+        <item itemvalue="Application.testShapes" />
         <item itemvalue="Application.FirstShapes" />
         <item itemvalue="Application.AnimationTest" />
-        <item itemvalue="Application.AlphaMapTest" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +188,28 @@
       <option name="project" value="LOCAL" />
       <updated>1621438682557</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Shapes updates">
+      <created>1621448480661</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1621448480661</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Shapes updates">
+      <created>1621453754980</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1621453754980</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Shapes updates">
+      <created>1621454376323</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1621454376323</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
