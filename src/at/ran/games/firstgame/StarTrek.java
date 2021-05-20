@@ -9,6 +9,7 @@ import java.util.Random;
 
 public class StarTrek extends BasicGame {
     private List<Actor> actorsList;
+    private Rocket rocket;
 
 
     public StarTrek(String title) {
@@ -35,13 +36,17 @@ public class StarTrek extends BasicGame {
             Ellipse ellipse = new Ellipse(random.nextInt(600), random.nextInt(600));
             actorsList.add(ellipse);
         }
+
+        Rocket rocket = new Rocket();
+        this.rocket = rocket;
+        this.actorsList.add(rocket);
     }
 
     @Override
     public void update(GameContainer gameContainer, int delta) throws SlickException {
 
         for (Actor actor:this.actorsList) {
-            actor.update(delta);
+            actor.update(gameContainer, delta);
         }
     }
 
@@ -53,7 +58,16 @@ public class StarTrek extends BasicGame {
         }
     }
 
-        public static void main (String[] argv){
+    @Override
+    public void keyPressed(int key, char c) {
+      if(key == Input.KEY_SPACE){
+          System.out.println("BANG!");
+          Cannonball cb =  new Cannonball(this.rocket.getX(), this.rocket.getY());
+          this.actorsList.add(cb);
+      };
+    }
+
+    public static void main (String[] argv){
             try {
                 AppGameContainer container = new AppGameContainer(new StarTrek("Rectangles"));
                 container.setDisplayMode(800, 600, false);

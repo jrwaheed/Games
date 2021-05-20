@@ -1,5 +1,6 @@
 package at.ran.games.firstgame;
 
+import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 
 import java.util.Random;
@@ -29,7 +30,7 @@ public class Rectangle implements Actor {
         graphics.drawRect(this.x, this.y, 10,10);
     }
 
-    public void update(int delta) {
+    public void update(GameContainer gameContainer, int delta) {
         Random random = new Random();
 
         if(this.x > 800 || this.x < 0){
