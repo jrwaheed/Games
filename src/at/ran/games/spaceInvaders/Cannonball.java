@@ -1,9 +1,10 @@
-package at.ran.games.firstgame;
+package at.ran.games.spaceInvaders;
 
+import at.ran.games.spaceInvaders.SpaceActor;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 
-public class Cannonball implements Actor {
+public class Cannonball implements SpaceActor {
     private float x,y;
 
     public Cannonball(float x, float y) {

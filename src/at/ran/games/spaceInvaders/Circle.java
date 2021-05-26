@@ -1,13 +1,14 @@
-package at.ran.games.firstgame;
+package at.ran.games.spaceInvaders;
 
+import at.ran.games.spaceInvaders.SpaceActor;
+import org.newdawn.slick.Color;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.geom.Shape;
 
-import java.awt.*;
 import java.util.Random;
 
-public class Circle implements Actor{
+public class Circle implements SpaceActor {
     private enum DIRECTION {UP,DOWN, LEFT, RIGHT};
     private float x;
     private float y;
@@ -27,17 +28,23 @@ public class Circle implements Actor{
 
     public void render(Graphics graphics){
         graphics.drawOval(this.x, this.y,this.diameter, this.diameter);
+        graphics.setColor(new Color(100,100,100));
         graphics.draw(this.collisionShape);
+        graphics.setColor(Color.green);
     }
 
     public void update(GameContainer gameContainer, int delta) {
         Random random = new Random();
         this.y += (float)delta/this.speed;
-        this.diameter = this.diameter + .01f;
+        //this.diameter = this.diameter + .01f;
         if(this.y > 600){
             this.y = 0;
             this.diameter = random.nextInt(20) + 20;
-
         }
+        this.collisionShape.setCenterY(this.y);
+    }
+
+    public Shape getCollisionShape() {
+        return collisionShape;
     }
 }

@@ -1,13 +1,19 @@
-package at.ran.games.firstgame;
+package at.ran.games.spaceInvaders;
 
+import at.ran.games.spaceInvaders.SpaceActor;
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.Rectangle;
 import org.newdawn.slick.geom.Shape;
 
-public class Rocket implements Actor {
+import java.util.ArrayList;
+import java.util.List;
+
+public class Rocket implements SpaceActor {
     private Image rocketImage;
     private float x, y;
     private Shape collisionShape;
+    private List<Circle> circles;
+
 
     public Rocket() throws SlickException {
         Image tmp = new Image("testdata/Rocket1.png");
@@ -15,6 +21,7 @@ public class Rocket implements Actor {
         this.x = 400;
         this.y = 300;
         this.collisionShape = new Rectangle(this.x, this.y,35, 50);
+        this.circles = new ArrayList<Circle>();
     }
 
     @Override
@@ -25,6 +32,13 @@ public class Rocket implements Actor {
 
     @Override
     public void update(GameContainer gameContainer, int delta) {
+
+        for (Circle circle:circles) {
+            if(this.collisionShape.intersects(circle.getCollisionShape())){
+                System.out.println("Collision!");
+            }
+            
+        }
         if (gameContainer.getInput().isKeyDown(Input.KEY_RIGHT)) {
             this.x++;
         }
@@ -49,6 +63,10 @@ public class Rocket implements Actor {
 
     public float getY() {
         return y;
+    }
+
+    public void addCollisionPartner(Circle circle) {
+        this.circles.add(circle);
     }
 }
 
