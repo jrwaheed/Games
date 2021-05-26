@@ -1,12 +1,14 @@
-package at.ran.games.spaceInvaders;
+package at.ran.games.spaceInvadersbase;
 
-import at.ran.games.spaceInvaders.SpaceActor;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
+import org.newdawn.slick.geom.Shape;
 
 import java.util.Random;
 
-public class Rectangle implements SpaceActor {
+public class Rectangle implements CollisionActor {
+
+
     private enum DIRECTION {LEFT, RIGHT};
 
     private float x;
@@ -40,4 +42,11 @@ public class Rectangle implements SpaceActor {
         }
         this.x += (float)delta/this.speed;
     }
+
+    @Override
+    public Shape getShape() {
+        return null;
+    }
+
+
 }

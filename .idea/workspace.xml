@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Stars">
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Cannonball.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Ellipse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" afterDir="false" />
+    <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Unversioned stuff">
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/CollisionActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/HitActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvadersbase/Cannonball.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvadersbase/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvadersbase/CollisionActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvadersbase/Rocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvadersbase/SpaceActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvadersbase/SpaceInvaders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_20_2021_10_16_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_20_2021_10_16_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgame/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Cannonball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgame/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgame/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Rocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Cannonball.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Cannonball.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle$DIRECTION.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle$DIRECTION.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Ellipse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Rectangle$DIRECTION.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Rocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Rocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/SpaceInvaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/SpaceInvaders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Cannonball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Ellipse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvadersbase/Ellipse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvadersbase/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -52,13 +65,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/at/ran/games" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DCV\IdeaProjects\Games\src\at\ran\games" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\DCV\IdeaProjects\Games\testdata" />
     </key>
@@ -67,7 +83,7 @@
       <recent name="at.ran.games.snowworld" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SpaceInvaders">
+  <component name="RunManager" selected="Application.SpaceInvaders (1)">
     <configuration name="BigImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.newdawn.slick.tests.BigImageTest" />
       <module name="Slick2DTemplate" />
@@ -94,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Snowworld" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="at.ran.games.snowworld.Snowworld" />
+    <configuration name="SpaceInvaders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.ran.games.spaceInvadersbase.SpaceInvaders" />
       <module name="Slick2DTemplate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="at.ran.games.snowworld.*" />
+          <option name="PATTERN" value="at.ran.games.spaceInvadersbase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpaceInvaders (1)" />
         <item itemvalue="Application.SpaceInvaders" />
         <item itemvalue="Application.StarTrek" />
         <item itemvalue="Application.ImageTest" />
         <item itemvalue="Application.BigImageTest" />
-        <item itemvalue="Application.Snowworld" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621530687150</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Unversioned stuff">
+      <created>1622041959696</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1622041959696</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,7 +269,8 @@
     <MESSAGE value="Stars" />
     <MESSAGE value="Shapes updates" />
     <MESSAGE value="3D Snowflakes" />
-    <option name="LAST_COMMIT_MESSAGE" value="3D Snowflakes" />
+    <MESSAGE value="Unversioned stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unversioned stuff" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Games$StarTrek.ic" NAME="StarTrek Coverage Results" MODIFIED="1621540271235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

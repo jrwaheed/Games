@@ -1,6 +1,5 @@
-package at.ran.games.spaceInvaders;
+package at.ran.games.spaceInvadersbase;
 
-import at.ran.games.spaceInvaders.SpaceActor;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 

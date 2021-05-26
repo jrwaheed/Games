@@ -1,4 +1,4 @@
-package at.ran.games.spaceInvaders;
+package at.ran.games.spaceInvadersbase;
 
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.Rectangle;
@@ -11,7 +11,8 @@ public class Rocket implements SpaceActor {
     private Image rocketImage;
     private float x, y;
     private Shape collisionShape;
-    private List<CollisionActor> collisionShapesList;
+    //Pulled here
+    private List<CollisionActor> collisionShapes;
 
 
     public Rocket() throws SlickException {
@@ -20,7 +21,8 @@ public class Rocket implements SpaceActor {
         this.x = 400;
         this.y = 300;
         this.collisionShape = new Rectangle(this.x, this.y, 40, 50);
-        this.collisionShapesList = new ArrayList<CollisionActor>();
+        //Pulled here
+        this.collisionShapes = new ArrayList<CollisionActor>();
     }
 
     @Override
@@ -49,7 +51,7 @@ public class Rocket implements SpaceActor {
         this.collisionShape.setCenterX(this.x + 25);
         this.collisionShape.setCenterY(this.y + 25);
 
-        for (CollisionActor shape: this.collisionShapesList) {
+        for (CollisionActor shape: this.collisionShapes) {
             if (this.collisionShape.intersects(shape.getShape())) {
                 System.out.println("Collision!");
             }
@@ -65,7 +67,7 @@ public class Rocket implements SpaceActor {
     }
 
     public void addCollisionPartner(Circle circle) {
-        this.collisionShapesList.add(circle);
+        this.collisionShapes.add(circle);
     }
 
 

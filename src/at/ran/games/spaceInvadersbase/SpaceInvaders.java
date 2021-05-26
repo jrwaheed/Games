@@ -1,9 +1,5 @@
-package at.ran.games.spaceInvaders;
+package at.ran.games.spaceInvadersbase;
 
-import at.ran.games.spaceInvaders.Cannonball;
-import at.ran.games.spaceInvaders.Circle;
-import at.ran.games.spaceInvaders.Rocket;
-import at.ran.games.spaceInvaders.SpaceActor;
 import org.newdawn.slick.*;
 
 import java.util.ArrayList;
@@ -12,9 +8,7 @@ import java.util.Random;
 
 public class SpaceInvaders extends BasicGame {
     private List<SpaceActor> actorsList;
-    private List<HitActor> hitActorList;
-    private at.ran.games.spaceInvaders.Rocket rocket;
-
+    private at.ran.games.spaceInvadersbase.Rocket rocket;
 
 
     public SpaceInvaders(String title) {
@@ -24,32 +18,38 @@ public class SpaceInvaders extends BasicGame {
     @Override
     public void init(GameContainer gameContainer) throws SlickException {
         this.actorsList = new ArrayList<>();
-        this.hitActorList = new ArrayList<>();
 
         Random random = new Random();
-
-        at.ran.games.spaceInvaders.Rocket rocket = new Rocket();
+/*
+        for (int i = 0; i < 10; i++) {
+            at.ran.games.spaceInvaders.Rectangle rectangle = new Rectangle(random.nextInt(600), random.nextInt(600), 50);
+            actorsList.add(rectangle);
+        }
+*/      Rocket rocket = new Rocket();
         this.rocket = rocket;
         this.actorsList.add(rocket);
 
 
-        for (int i = 0; i < 5; i++) {
-            at.ran.games.spaceInvaders.Circle circle = new Circle();
+        for (int i = 0; i < 10; i++) {
+            Circle circle = new Circle();
             actorsList.add(circle);
-            hitActorList.add(circle);
             this.rocket.addCollisionPartner(circle);
-
         }
+/*
+        for (int i = 0; i < 10; i++) {
+            at.ran.games.spaceInvaders.Ellipse ellipse = new Ellipse(random.nextInt(600), random.nextInt(600));
+            actorsList.add(ellipse);
+        }
+*/
 
     }
 
     @Override
     public void update(GameContainer gameContainer, int delta) throws SlickException {
 
-        for (at.ran.games.spaceInvaders.SpaceActor actor:this.actorsList) {
+        for (SpaceActor actor:this.actorsList) {
             actor.update(gameContainer, delta);
         }
-
     }
 
 
@@ -63,16 +63,10 @@ public class SpaceInvaders extends BasicGame {
     @Override
     public void keyPressed(int key, char c) {
       if(key == Input.KEY_SPACE){
-          at.ran.games.spaceInvaders.Cannonball cannonball =  new Cannonball(this.rocket.getX(), this.rocket.getY());
-          this.actorsList.add(cannonball);
-          this.hitActorList.add(cannonball);
-
-
-
-
-
-
-      }
+          System.out.println("BANG!");
+          at.ran.games.spaceInvadersbase.Cannonball cb =  new Cannonball(this.rocket.getX(), this.rocket.getY());
+          this.actorsList.add(cb);
+      };
     }
 
     public static void main (String[] argv){
@@ -83,7 +77,6 @@ public class SpaceInvaders extends BasicGame {
             } catch (SlickException e) {
                 e.printStackTrace();
             }
-
         }
     }
 
