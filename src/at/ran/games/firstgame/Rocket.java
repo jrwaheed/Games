@@ -10,11 +10,11 @@ public class Rocket implements Actor {
     private Shape collisionShape;
 
     public Rocket() throws SlickException {
-        Image tmp = new Image("testdata/space-cartoon-rocket.jpg");
+        Image tmp = new Image("testdata/Rocket1.png");
         this.rocketImage = tmp.getScaledCopy(50, 50);
         this.x = 400;
         this.y = 300;
-        this.collisionShape = new Rectangle(this.x, this.y,100, 100);
+        this.collisionShape = new Rectangle(this.x, this.y,35, 50);
     }
 
     @Override
@@ -39,6 +39,8 @@ public class Rocket implements Actor {
         if (gameContainer.getInput().isKeyDown(Input.KEY_DOWN)) {
             this.y++;
         }
+        this.collisionShape.setCenterX(this.x + 25);
+        this.collisionShape.setCenterY(this.y + 25);
     }
 
     public float getX() {

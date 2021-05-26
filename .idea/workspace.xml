@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Stars">
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Cannonball.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Rocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Cannonball.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Ellipse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgame/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgame/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Cannonball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgame/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgame/Ellipse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Ellipse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgame/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgame/StarTrek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/StarTrek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgame/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgame/Rocket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +63,11 @@
       <recent name="C:\Users\DCV\IdeaProjects\Games\testdata" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="at.ran.games.spaceInvaders" />
       <recent name="at.ran.games.snowworld" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StarTrek">
+  <component name="RunManager" selected="Application.SpaceInvaders">
     <configuration name="BigImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.newdawn.slick.tests.BigImageTest" />
       <module name="Slick2DTemplate" />
@@ -103,6 +107,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpaceInvaders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.ran.games.spaceInvaders.SpaceInvaders" />
+      <module name="Slick2DTemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.ran.games.spaceInvaders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StarTrek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="at.ran.games.firstgame.StarTrek" />
       <module name="Slick2DTemplate" />
@@ -116,26 +133,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testShapes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="at.ran.games.firstgame.testShapes" />
-      <module name="Slick2DTemplate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.ran.games.firstgame.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpaceInvaders" />
         <item itemvalue="Application.StarTrek" />
         <item itemvalue="Application.ImageTest" />
         <item itemvalue="Application.BigImageTest" />
         <item itemvalue="Application.Snowworld" />
-        <item itemvalue="Application.testShapes" />
       </list>
     </recent_temporary>
   </component>
