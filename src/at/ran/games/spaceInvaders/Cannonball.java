@@ -14,6 +14,7 @@ public class Cannonball implements SpaceActor, HitActor {
     private Shape hitShape;
 
 
+
     public Cannonball(float x, float y) {
         this.x = x;
         this.y = y;

@@ -34,9 +34,9 @@ public class SpaceInvaders extends BasicGame {
 
 
         for (int i = 0; i < 5; i++) {
-            at.ran.games.spaceInvaders.Circle circle = new Circle();
+            at.ran.games.spaceInvaders.Circle circle = new Circle(this.hitActorList);
             actorsList.add(circle);
-            hitActorList.add(circle);
+
             this.rocket.addCollisionPartner(circle);
 
         }
@@ -63,14 +63,9 @@ public class SpaceInvaders extends BasicGame {
     @Override
     public void keyPressed(int key, char c) {
       if(key == Input.KEY_SPACE){
-          at.ran.games.spaceInvaders.Cannonball cannonball =  new Cannonball(this.rocket.getX(), this.rocket.getY());
+          Cannonball cannonball =  new Cannonball(this.rocket.getX(), this.rocket.getY());
           this.actorsList.add(cannonball);
           this.hitActorList.add(cannonball);
-
-
-
-
-
 
       }
     }
