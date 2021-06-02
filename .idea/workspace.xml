@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Unversioned stuff" />
+    <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Unversioned stuff">
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -270,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622638163119</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Actor correction">
+      <created>1622638641184</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1622638641184</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,7 +303,8 @@
     <MESSAGE value="Unversioned stuff" />
     <MESSAGE value="Cannonball hit fixed" />
     <MESSAGE value="Actor orrection" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actor orrection" />
+    <MESSAGE value="Actor correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actor correction" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Games$StarTrek.ic" NAME="StarTrek Coverage Results" MODIFIED="1621540271235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

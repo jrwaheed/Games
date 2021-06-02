@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+//check
 public class SpaceInvaders extends BasicGame {
     private List<SpaceActor> actorsList;
     private List<HitActor> hitActorList;
