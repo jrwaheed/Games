@@ -51,7 +51,7 @@ public class Rocket implements SpaceActor {
 
         for (CollisionActor shape: this.collisionShapesList) {
             if (this.collisionShape.intersects(shape.getShape())) {
-                System.out.println("Collision!");
+                //System.out.println("Collision!");
             }
         }
     }

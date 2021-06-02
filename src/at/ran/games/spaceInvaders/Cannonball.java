@@ -5,11 +5,12 @@ import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.geom.Rectangle;
 import org.newdawn.slick.geom.Shape;
+import org.newdawn.slick.geom.Triangulator;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cannonball implements SpaceActor, HitActor {
+public class Cannonball implements SpaceActor,HitActor {
     private float x,y;
     private Shape hitShape;
 
@@ -18,8 +19,7 @@ public class Cannonball implements SpaceActor, HitActor {
     public Cannonball(float x, float y) {
         this.x = x;
         this.y = y;
-        this.hitShape = new Rectangle(this.x, this.y, 2,20);
-
+        this.hitShape = new Rectangle(this.x, this.y, 2,21);
     }
 
     @Override
@@ -33,10 +33,6 @@ public class Cannonball implements SpaceActor, HitActor {
     public void update(GameContainer gameContainer, int delta) {
         this.y--;
         this.hitShape.setY(this.y--);
-
-
-
-
     }
 
     @Override

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class Circle implements CollisionActor, HitActor {
+public class Circle implements CollisionActor, SpaceActor, HitActor {
     private enum DIRECTION {UP,DOWN, LEFT, RIGHT};
     private float x;
     private float y;
@@ -36,10 +36,12 @@ public class Circle implements CollisionActor, HitActor {
 
     }
 
+
     public void render(Graphics graphics){
         graphics.draw(this.collisionShape);
         graphics.setColor(Color.green);
     }
+
 
     public void update(GameContainer gameContainer, int delta) {
 
@@ -53,13 +55,18 @@ public class Circle implements CollisionActor, HitActor {
         this.hitShape.setCenterY(this.y);
 
         this.removeList.clear();
-        for (HitActor shape : this.hitShapesList) {
-            if (this.hitShape.intersects(shape.getHitShape())) {
+        for (HitActor actor : this.hitShapesList) {
+
+            if /*(this.hitShape.intersects(actor.getHitShape()))*/
+                (actor.getHitShape().intersects(this.hitShape)){
                 System.out.println("Hit");
-                this.removeList.add(shape);
+                this.removeList.add(actor);
+
 
             }
+
         }
+
 
         for (HitActor actor : this.removeList) {
             this.hitShapesList.remove(actor);
