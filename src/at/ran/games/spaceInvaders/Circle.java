@@ -45,6 +45,7 @@ public class Circle implements CollisionActor, SpaceActor, HitActor {
 
     public void update(GameContainer gameContainer, int delta) {
 
+
         Random random = new Random();
         this.y += (float) delta / this.speed;
         if (this.y > 600) {
