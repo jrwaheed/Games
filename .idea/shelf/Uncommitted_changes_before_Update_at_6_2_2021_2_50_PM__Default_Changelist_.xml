@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM_[Default_Changelist]" date="1622638239200" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 6/2/2021 2:50 PM [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle.class" />
+    <option name="AFTER_PATH" value="out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM_[Default_Changelist]/Circle.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Rocket.class" />
+    <option name="AFTER_PATH" value="out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Rocket.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM_[Default_Changelist]/Rocket.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Slick2DTemplate/at/ran/games/spaceInvaders/SpaceInvaders.class" />
+    <option name="AFTER_PATH" value="out/production/Slick2DTemplate/at/ran/games/spaceInvaders/SpaceInvaders.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM_[Default_Changelist]/SpaceInvaders.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Cannonball.class" />
+    <option name="AFTER_PATH" value="out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Cannonball.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM_[Default_Changelist]/Cannonball.class" />
+  </binary>
+</changelist>

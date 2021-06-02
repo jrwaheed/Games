@@ -1,0 +1,169 @@
+Index: src/at/ran/games/spaceInvaders/SpaceInvaders.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.ran.games.spaceInvaders;\r\n\r\nimport at.ran.games.spaceInvaders.Cannonball;\r\nimport at.ran.games.spaceInvaders.Circle;\r\nimport at.ran.games.spaceInvaders.Rocket;\r\nimport at.ran.games.spaceInvaders.SpaceActor;\r\nimport org.newdawn.slick.*;\r\nimport org.newdawn.slick.Graphics;\r\nimport org.newdawn.slick.geom.Shape;\r\n\r\nimport java.awt.*;\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\nimport java.util.Random;\r\n\r\npublic class SpaceInvaders extends BasicGame {\r\n    private List<SpaceActor> actorsList;\r\n    private List<HitActor> hitActorList;\r\n    private Rocket rocket;\r\n\r\n\r\n\r\n    public SpaceInvaders(String title) {\r\n        super(title);\r\n    }\r\n\r\n    @Override\r\n    public void init(GameContainer gameContainer) throws SlickException {\r\n        this.actorsList = new ArrayList<>();\r\n        this.hitActorList = new ArrayList<>();\r\n\r\n        Random random = new Random();\r\n\r\n        at.ran.games.spaceInvaders.Rocket rocket = new Rocket();\r\n        this.rocket = rocket;\r\n        this.actorsList.add(rocket);\r\n\r\n\r\n        for (int i = 0; i < 5; i++) {\r\n            Circle circle = new Circle(this.hitActorList);\r\n            actorsList.add(circle);\r\n\r\n            this.rocket.addCollisionPartner(circle);\r\n\r\n        }\r\n\r\n    }\r\n\r\n    @Override\r\n    public void update(GameContainer gameContainer, int delta) throws SlickException {\r\n\r\n        for (at.ran.games.spaceInvaders.SpaceActor actor:this.actorsList) {\r\n            actor.update(gameContainer, delta);\r\n        }\r\n\r\n    }\r\n\r\n\r\n    @Override\r\n    public void render(GameContainer gameContainer, Graphics graphics) throws SlickException {\r\n        for (SpaceActor actor: this.actorsList) {\r\n            actor.render(graphics);\r\n        }\r\n    }\r\n\r\n    @Override\r\n    public void keyPressed(int key, char c) {\r\n      if(key == Input.KEY_SPACE){\r\n          Cannonball cannonball =  new Cannonball(this.rocket.getX(), this.rocket.getY());\r\n          this.actorsList.add(cannonball);\r\n          this.hitActorList.add(cannonball);\r\n\r\n      }\r\n    }\r\n\r\n\r\n\r\n    public static void main (String[] argv){\r\n            try {\r\n                AppGameContainer container = new AppGameContainer(new SpaceInvaders(\"Space Invaders\"));\r\n                container.setDisplayMode(800, 600, false);\r\n                container.start();\r\n            } catch (SlickException e) {\r\n                e.printStackTrace();\r\n            }\r\n        }\r\n    }\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/at/ran/games/spaceInvaders/SpaceInvaders.java b/src/at/ran/games/spaceInvaders/SpaceInvaders.java
+--- a/src/at/ran/games/spaceInvaders/SpaceInvaders.java	(revision 90a02fbf9ce716335a7b900867355033d5310fb1)
++++ b/src/at/ran/games/spaceInvaders/SpaceInvaders.java	(date 1622638663241)
+@@ -5,10 +5,7 @@
+ import at.ran.games.spaceInvaders.Rocket;
+ import at.ran.games.spaceInvaders.SpaceActor;
+ import org.newdawn.slick.*;
+-import org.newdawn.slick.Graphics;
+-import org.newdawn.slick.geom.Shape;
+ 
+-import java.awt.*;
+ import java.util.ArrayList;
+ import java.util.List;
+ import java.util.Random;
+@@ -16,7 +13,7 @@
+ public class SpaceInvaders extends BasicGame {
+     private List<SpaceActor> actorsList;
+     private List<HitActor> hitActorList;
+-    private Rocket rocket;
++    private at.ran.games.spaceInvaders.Rocket rocket;
+ 
+ 
+ 
+@@ -37,9 +34,9 @@
+ 
+ 
+         for (int i = 0; i < 5; i++) {
+-            Circle circle = new Circle(this.hitActorList);
++            at.ran.games.spaceInvaders.Circle circle = new Circle();
+             actorsList.add(circle);
+-
++            hitActorList.add(circle);
+             this.rocket.addCollisionPartner(circle);
+ 
+         }
+@@ -66,14 +63,17 @@
+     @Override
+     public void keyPressed(int key, char c) {
+       if(key == Input.KEY_SPACE){
+-          Cannonball cannonball =  new Cannonball(this.rocket.getX(), this.rocket.getY());
++          at.ran.games.spaceInvaders.Cannonball cannonball =  new Cannonball(this.rocket.getX(), this.rocket.getY());
+           this.actorsList.add(cannonball);
+           this.hitActorList.add(cannonball);
+ 
++
++
++
++
++
+       }
+     }
+-
+-
+ 
+     public static void main (String[] argv){
+             try {
+@@ -83,6 +83,7 @@
+             } catch (SlickException e) {
+                 e.printStackTrace();
+             }
++
+         }
+     }
+ 
+Index: src/at/ran/games/spaceInvaders/Rocket.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.ran.games.spaceInvaders;\r\n\r\nimport org.newdawn.slick.*;\r\nimport org.newdawn.slick.geom.Rectangle;\r\nimport org.newdawn.slick.geom.Shape;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class Rocket implements SpaceActor {\r\n    private Image rocketImage;\r\n    private float x, y;\r\n    private Shape collisionShape;\r\n    private List<CollisionActor> collisionShapesList;\r\n\r\n\r\n    public Rocket() throws SlickException {\r\n        Image tmp = new Image(\"testdata/Rocket1.png\");\r\n        this.rocketImage = tmp.getScaledCopy(50, 50);\r\n        this.x = 400;\r\n        this.y = 300;\r\n        this.collisionShape = new Rectangle(this.x, this.y, 40, 50);\r\n        this.collisionShapesList = new ArrayList<CollisionActor>();\r\n    }\r\n\r\n    @Override\r\n    public void render(Graphics graphics) {\r\n        rocketImage.draw(this.x, this.y);\r\n        graphics.draw(this.collisionShape);\r\n    }\r\n\r\n    @Override\r\n    public void update(GameContainer gameContainer, int delta) {\r\n        //Pulled here\r\n        if (gameContainer.getInput().isKeyDown(Input.KEY_RIGHT)) {\r\n            this.x++;\r\n        }\r\n        if (gameContainer.getInput().isKeyDown(Input.KEY_LEFT)) {\r\n            this.x--;\r\n        }\r\n\r\n        if (gameContainer.getInput().isKeyDown(Input.KEY_UP)) {\r\n            this.y--;\r\n        }\r\n\r\n        if (gameContainer.getInput().isKeyDown(Input.KEY_DOWN)) {\r\n            this.y++;\r\n        }\r\n        this.collisionShape.setCenterX(this.x + 25);\r\n        this.collisionShape.setCenterY(this.y + 25);\r\n\r\n        for (CollisionActor shape: this.collisionShapesList) {\r\n            if (this.collisionShape.intersects(shape.getShape())) {\r\n                //System.out.println(\"Collision!\");\r\n            }\r\n        }\r\n    }\r\n\r\n    public float getX() {\r\n        return x + 20;\r\n    }\r\n\r\n    public float getY() {\r\n        return y;\r\n    }\r\n\r\n    public void addCollisionPartner(Circle circle) {\r\n        this.collisionShapesList.add(circle);\r\n    }\r\n\r\n\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/at/ran/games/spaceInvaders/Rocket.java b/src/at/ran/games/spaceInvaders/Rocket.java
+--- a/src/at/ran/games/spaceInvaders/Rocket.java	(revision 90a02fbf9ce716335a7b900867355033d5310fb1)
++++ b/src/at/ran/games/spaceInvaders/Rocket.java	(date 1622638663241)
+@@ -57,11 +57,11 @@
+     }
+ 
+     public float getX() {
+-        return x + 20;
++        return x + 22;
+     }
+ 
+     public float getY() {
+-        return y;
++        return y - 8;
+     }
+ 
+     public void addCollisionPartner(Circle circle) {
+Index: src/at/ran/games/spaceInvaders/Cannonball.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.ran.games.spaceInvaders;\r\n\r\nimport org.newdawn.slick.Color;\r\nimport org.newdawn.slick.GameContainer;\r\nimport org.newdawn.slick.Graphics;\r\nimport org.newdawn.slick.geom.Rectangle;\r\nimport org.newdawn.slick.geom.Shape;\r\nimport org.newdawn.slick.geom.Triangulator;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class Cannonball implements SpaceActor,HitActor {\r\n    private float x,y;\r\n    private Shape hitShape;\r\n\r\n\r\n\r\n    public Cannonball(float x, float y) {\r\n        this.x = x;\r\n        this.y = y;\r\n        this.hitShape = new Rectangle(this.x, this.y, 2,21);\r\n    }\r\n\r\n    @Override\r\n    public void render(Graphics graphics) {\r\n        //graphics.fillRect(this.x + 5, this.y - 5, 2,20);\r\n        graphics.draw(this.hitShape);\r\n        graphics.setColor(Color.red);\r\n    }\r\n\r\n    @Override\r\n    public void update(GameContainer gameContainer, int delta) {\r\n        this.y--;\r\n        this.hitShape.setY(this.y--);\r\n    }\r\n\r\n    @Override\r\n    public Shape getHitShape() {\r\n        return hitShape;\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/at/ran/games/spaceInvaders/Cannonball.java b/src/at/ran/games/spaceInvaders/Cannonball.java
+--- a/src/at/ran/games/spaceInvaders/Cannonball.java	(revision 90a02fbf9ce716335a7b900867355033d5310fb1)
++++ b/src/at/ran/games/spaceInvaders/Cannonball.java	(date 1622638663241)
+@@ -24,7 +24,7 @@
+ 
+     @Override
+     public void render(Graphics graphics) {
+-        //graphics.fillRect(this.x + 5, this.y - 5, 2,20);
++
+         graphics.draw(this.hitShape);
+         graphics.setColor(Color.red);
+     }
+Index: src/at/ran/games/spaceInvaders/Circle.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package at.ran.games.spaceInvaders;\r\n\r\nimport org.newdawn.slick.Color;\r\nimport org.newdawn.slick.GameContainer;\r\nimport org.newdawn.slick.Graphics;\r\nimport org.newdawn.slick.geom.Shape;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\nimport java.util.Random;\r\n\r\npublic class Circle implements CollisionActor, SpaceActor, HitActor {\r\n    private enum DIRECTION {UP,DOWN, LEFT, RIGHT};\r\n    private float x;\r\n    private float y;\r\n    private float speed;\r\n    private float diameter;\r\n    private Shape collisionShape;\r\n    private Shape hitShape;\r\n    private List<HitActor> hitShapesList;\r\n    private List<HitActor> removeList;\r\n\r\n\r\n    public Circle(List<HitActor> hitShapesList) {\r\n        Random random = new Random();\r\n        this.hitShapesList = hitShapesList;\r\n        this.removeList = new ArrayList<>();\r\n\r\n        this.x = random.nextInt(800);\r\n        this.y = random.nextInt(600);\r\n        this.speed = random.nextInt(40) + 10;\r\n        this.diameter = random.nextInt(20) + 20;\r\n        this.collisionShape = new org.newdawn.slick.geom.Circle(this.x, this.y, this.diameter);\r\n\r\n        this.hitShape = new org.newdawn.slick.geom.Circle(this.x, this.y, this.diameter);\r\n\r\n    }\r\n\r\n\r\n    public void render(Graphics graphics){\r\n        graphics.draw(this.collisionShape);\r\n        graphics.setColor(Color.green);\r\n    }\r\n\r\n\r\n    public void update(GameContainer gameContainer, int delta) {\r\n\r\n\r\n        Random random = new Random();\r\n        this.y += (float) delta / this.speed;\r\n        if (this.y > 600) {\r\n            this.y = 0;\r\n            this.diameter = random.nextInt(20) + 20;\r\n        }\r\n        this.collisionShape.setCenterY(this.y);\r\n        this.hitShape.setCenterY(this.y);\r\n\r\n        this.removeList.clear();\r\n        for (HitActor actor : this.hitShapesList) {\r\n\r\n            if /*(this.hitShape.intersects(actor.getHitShape()))*/\r\n                (actor.getHitShape().intersects(this.hitShape)){\r\n                System.out.println(\"Hit\");\r\n                this.removeList.add(actor);\r\n\r\n\r\n            }\r\n\r\n        }\r\n\r\n\r\n        for (HitActor actor : this.removeList) {\r\n            this.hitShapesList.remove(actor);\r\n        }\r\n    }\r\n\r\n    @Override\r\n    public Shape getShape() {\r\n        return collisionShape;\r\n    }\r\n\r\n\r\n    @Override\r\n    public Shape getHitShape() {\r\n        return hitShape;\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/at/ran/games/spaceInvaders/Circle.java b/src/at/ran/games/spaceInvaders/Circle.java
+--- a/src/at/ran/games/spaceInvaders/Circle.java	(revision 90a02fbf9ce716335a7b900867355033d5310fb1)
++++ b/src/at/ran/games/spaceInvaders/Circle.java	(date 1622638663256)
+@@ -39,10 +39,14 @@
+ 
+     public void render(Graphics graphics){
+         graphics.draw(this.collisionShape);
+-        graphics.setColor(Color.green);
++        graphics.setColor(Color.green );
+     }
+ 
+-
++  /*      for (HitActor element : this.hitShapesList) {
++            if (this.hitShape.intersects(element.getHitShape())) {
++                System.out.println("hit");
++            }
++   */
+     public void update(GameContainer gameContainer, int delta) {
+ 
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"eeecc374-2f49-41db-98a7-4767e2469b53\" name=\"Default Changelist\" comment=\"Unversioned stuff\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"Interface\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"andreas\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1YTQfL2MEkLFTDMSD3qqivUvMBV\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/src/at/ran/games\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Project\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.2\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.lookFeel\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\DCV\\IdeaProjects\\Games\\src\\at\\ran\\games\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\DCV\\IdeaProjects\\Games\\testdata\" />\r\n    </key>\r\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\r\n      <recent name=\"at.ran.games.spaceInvaders\" />\r\n      <recent name=\"at.ran.games.snowworld\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.SpaceInvaders (1)\">\r\n    <configuration name=\"BigImageTest\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.newdawn.slick.tests.BigImageTest\" />\r\n      <module name=\"Slick2DTemplate\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"org.newdawn.slick.tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"ImageTest\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.newdawn.slick.tests.ImageTest\" />\r\n      <module name=\"Slick2DTemplate\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"org.newdawn.slick.tests.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SpaceInvaders (1)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"at.ran.games.spaceInvaders.SpaceInvaders\" />\r\n      <module name=\"Slick2DTemplate\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"at.ran.games.spaceInvaders.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SpaceInvaders\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"at.ran.games.spaceInvadersbase.SpaceInvaders\" />\r\n      <module name=\"Slick2DTemplate\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"at.ran.games.spaceInvadersbase.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SpaceInvaders\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"at.ran.games.spaceInvaders.SpaceInvaders\" />\r\n      <module name=\"Slick2DTemplate\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"at.ran.games.spaceInvaders.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SpaceInvaders\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"at.ran.games.spaceInvaders.SpaceInvaders\" />\r\n      <module name=\"Slick2DTemplate\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"at.ran.games.spaceInvaders.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"StarTrek\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"at.ran.games.firstgame.StarTrek\" />\r\n      <module name=\"Slick2DTemplate\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"at.ran.games.firstgame.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.SpaceInvaders (1)\" />\r\n        <item itemvalue=\"Application.BigImageTest\" />\r\n        <item itemvalue=\"Application.SpaceInvaders\" />\r\n        <item itemvalue=\"Application.StarTrek\" />\r\n        <item itemvalue=\"Application.ImageTest\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration />\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"eeecc374-2f49-41db-98a7-4767e2469b53\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1582964206231</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1582964206231</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"test\">\r\n      <created>1620837446868</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620837446868</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Shapes\">\r\n      <created>1620846313199</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620846313199</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Shapes\">\r\n      <created>1620846464599</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620846464599</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Stars\">\r\n      <created>1620849240088</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1620849240088</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Shapes updates\">\r\n      <created>1621436783382</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621436783383</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Shapes updates\">\r\n      <created>1621438682557</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621438682557</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Shapes updates\">\r\n      <created>1621448480661</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621448480661</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Shapes updates\">\r\n      <created>1621453754980</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621453754980</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Shapes updates\">\r\n      <created>1621454376323</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621454376323</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"3D Snowflakes\">\r\n      <created>1621530687150</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1621530687150</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Unversioned stuff\">\r\n      <created>1622041959696</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622041959696</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Unversioned stuff\">\r\n      <created>1622058948210</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622058948210</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"Cannonball hit fixed\">\r\n      <created>1622475363649</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622475363649</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"Actor orrection\">\r\n      <created>1622638163119</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1622638163119</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"15\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"test\" />\r\n    <MESSAGE value=\"Shapes\" />\r\n    <MESSAGE value=\"Stars\" />\r\n    <MESSAGE value=\"Shapes updates\" />\r\n    <MESSAGE value=\"3D Snowflakes\" />\r\n    <MESSAGE value=\"Unversioned stuff\" />\r\n    <MESSAGE value=\"Cannonball hit fixed\" />\r\n    <MESSAGE value=\"Actor orrection\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Actor orrection\" />\r\n  </component>\r\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\r\n    <SUITE FILE_PATH=\"coverage/Games$StarTrek.ic\" NAME=\"StarTrek Coverage Results\" MODIFIED=\"1621540271235\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"idea\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\">\r\n      <FILTER>at.ran.games.firstgame.*</FILTER>\r\n    </SUITE>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 90a02fbf9ce716335a7b900867355033d5310fb1)
++++ b/.idea/workspace.xml	(date 1622639646892)
+@@ -1,7 +1,16 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Unversioned stuff" />
++    <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Unversioned stuff">
++      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Cannonball.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Cannonball.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Rocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Rocket.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/SpaceInvaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/SpaceInvaders.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Cannonball.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rocket.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
