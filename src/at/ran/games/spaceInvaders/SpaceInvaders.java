@@ -5,6 +5,7 @@ import at.ran.games.spaceInvaders.Circle;
 import at.ran.games.spaceInvaders.Rocket;
 import at.ran.games.spaceInvaders.SpaceActor;
 import org.newdawn.slick.*;
+import org.newdawn.slick.Color;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.geom.Shape;
 
@@ -13,8 +14,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-//checking revision
-public class SpaceInvaders extends BasicGame {
+
+public class SpaceInvaders extends BasicGame{
     private List<SpaceActor> actorsList;
     private List<HitActor> hitActorList;
     private Rocket rocket;
@@ -32,7 +33,7 @@ public class SpaceInvaders extends BasicGame {
 
         Random random = new Random();
 
-        at.ran.games.spaceInvaders.Rocket rocket = new Rocket();
+        Rocket rocket = new Rocket();
         this.rocket = rocket;
         this.actorsList.add(rocket);
 
@@ -40,6 +41,7 @@ public class SpaceInvaders extends BasicGame {
         for (int i = 0; i < 5; i++) {
             Circle circle = new Circle(this.hitActorList);
             actorsList.add(circle);
+
 
             this.rocket.addCollisionPartner(circle);
 
@@ -50,10 +52,9 @@ public class SpaceInvaders extends BasicGame {
     @Override
     public void update(GameContainer gameContainer, int delta) throws SlickException {
 
-        for (at.ran.games.spaceInvaders.SpaceActor actor:this.actorsList) {
+        for (SpaceActor actor:this.actorsList) {
             actor.update(gameContainer, delta);
         }
-
     }
 
 
@@ -73,6 +74,7 @@ public class SpaceInvaders extends BasicGame {
 
       }
     }
+
 
 
 

@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Unversioned stuff">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/SpaceInvaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/SpaceInvaders.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Cannonball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rocket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SuperSpaceActor.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,12 +94,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpaceInvaders (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="at.ran.games.spaceInvaders.SpaceInvaders" />
+    <configuration name="SpaceInvaders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.ran.games.spaceInvadersbase.SpaceInvaders" />
       <module name="Slick2DTemplate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="at.ran.games.spaceInvaders.*" />
+          <option name="PATTERN" value="at.ran.games.spaceInvadersbase.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,11 +108,11 @@
       </method>
     </configuration>
     <configuration name="SpaceInvaders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="at.ran.games.spaceInvadersbase.SpaceInvaders" />
+      <option name="MAIN_CLASS_NAME" value="at.ran.games.spaceInvaders.SpaceInvaders" />
       <module name="Slick2DTemplate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="at.ran.games.spaceInvadersbase.*" />
+          <option name="PATTERN" value="at.ran.games.spaceInvaders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -279,7 +286,28 @@
       <option name="project" value="LOCAL" />
       <updated>1622638641184</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Actor correction">
+      <created>1622638752885</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1622638752885</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Actor correction">
+      <created>1622638861142</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1622638861142</updated>
+    </task>
+    <task id="LOCAL-00018" summary="New update">
+      <created>1622639588925</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1622639588925</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -304,7 +332,8 @@
     <MESSAGE value="Cannonball hit fixed" />
     <MESSAGE value="Actor orrection" />
     <MESSAGE value="Actor correction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Actor correction" />
+    <MESSAGE value="New update" />
+    <option name="LAST_COMMIT_MESSAGE" value="New update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Games$StarTrek.ic" NAME="StarTrek Coverage Results" MODIFIED="1621540271235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

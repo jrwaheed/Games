@@ -13,6 +13,7 @@ import java.util.List;
 public class Cannonball implements SpaceActor,HitActor {
     private float x,y;
     private Shape hitShape;
+    private int health;
 
 
 
@@ -20,6 +21,7 @@ public class Cannonball implements SpaceActor,HitActor {
         this.x = x;
         this.y = y;
         this.hitShape = new Rectangle(this.x, this.y, 2,21);
+        this.health = 1;
     }
 
     @Override

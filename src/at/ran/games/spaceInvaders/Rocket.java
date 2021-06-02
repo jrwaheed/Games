@@ -27,11 +27,13 @@ public class Rocket implements SpaceActor {
     public void render(Graphics graphics) {
         rocketImage.draw(this.x, this.y);
         graphics.draw(this.collisionShape);
+        //graphics.setColor(Color.red);
+
+
     }
 
     @Override
     public void update(GameContainer gameContainer, int delta) {
-        //Pulled here
         if (gameContainer.getInput().isKeyDown(Input.KEY_RIGHT)) {
             this.x++;
         }
