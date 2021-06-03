@@ -4,6 +4,7 @@ import org.newdawn.slick.geom.Shape;
 import java.util.List;
 
 public class Canary implements Actor{
+    private String color;
     private String song;
     private int feathers;
     private boolean beak;
@@ -12,7 +13,7 @@ public class Canary implements Actor{
 
 
 
-    public Canary(String song, int feathers, boolean beak) {
+    public Canary(String color, String song, int feathers, boolean beak) {
         this.song = song;
         this.feathers = feathers;
         this.beak = beak;

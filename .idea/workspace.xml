@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Unversioned stuff">
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/MethodForTropicalBirds/BirdMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Birds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Macaw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Parakeet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_05_2021_17_05__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_05_2021_17_05__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_05_2021_17_10__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_05_2021_17_10__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_20_2021_10_16_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_20_2021_10_16_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_10_16_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_10_16_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_57_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_57_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_3_14_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_3_14_PM__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Better Understanding">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/Testing/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Canary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Birds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Birds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Canary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Canary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Macaw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Macaw.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +173,6 @@
       <list>
         <item itemvalue="Application.SpaceInvaders (1)" />
         <item itemvalue="Application.Birds" />
-        <item itemvalue="Application.Parakeets" />
         <item itemvalue="Application.BigImageTest" />
         <item itemvalue="Application.SpaceInvaders" />
       </list>
@@ -328,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622639588925</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Better Understanding">
+      <created>1622729726459</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1622729726459</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -354,7 +349,8 @@
     <MESSAGE value="Actor orrection" />
     <MESSAGE value="Actor correction" />
     <MESSAGE value="New update" />
-    <option name="LAST_COMMIT_MESSAGE" value="New update" />
+    <MESSAGE value="Better Understanding" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better Understanding" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Games$StarTrek.ic" NAME="StarTrek Coverage Results" MODIFIED="1621540271235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
