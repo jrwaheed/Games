@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Unversioned stuff">
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/snake/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/snake/Element.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/snake/SnakeGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_27_2021_6_43_AM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_27_2021_6_43_AM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Cannonball.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Cannonball.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle$DIRECTION.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Circle$DIRECTION.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Rocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/Rocket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/SpaceInvaders.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/spaceInvaders/SpaceInvaders.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Cannonball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Rocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SpaceInvaders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/SuperSpaceActor.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +89,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.newdawn.slick.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpaceInvaders (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.ran.games.spaceInvaders.SpaceInvaders" />
+      <module name="Slick2DTemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.ran.games.spaceInvaders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
