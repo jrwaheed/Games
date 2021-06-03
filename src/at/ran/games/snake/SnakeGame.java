@@ -20,6 +20,9 @@ public class SnakeGame extends BasicGame{
         Element e2 = new Element(3,3);
         Element e3 = new Element(3,3);
         Element e4 = new Element(3,3);
+
+
+
     }
 
     @Override
@@ -27,10 +30,15 @@ public class SnakeGame extends BasicGame{
         for (Actor actor: this.actorsList) {
             actor.update(delta);
         }
+
     }
 
     @Override
     public void render(GameContainer gameContainer, Graphics graphics) throws SlickException {
+
+    }
+
+    public static void main(String[] args) {
 
     }
 }
