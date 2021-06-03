@@ -55,6 +55,7 @@ public class Circle implements CollisionActor, SpaceActor, HitActor {
 
 
         for (HitActor actor : this.hitShapesList) {
+            System.out.println(actor);
 
             if /*(this.hitShape.intersects(actor.getHitShape()))*/
                 (actor.getHitShape().intersects(this.hitShape)){

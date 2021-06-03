@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Unversioned stuff">
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/Testing/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/snake/TestElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/MethodForTropicalBirds/BirdMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Actor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Birds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Macaw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Parakeet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_05_2021_17_05__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_05_2021_17_05__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_05_2021_17_10__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_26_05_2021_17_10__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_20_2021_10_16_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_20_2021_10_16_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_10_16_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_10_16_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_57_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_57_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_3_14_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_3_14_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/snake/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/snake/Element.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/snake/SnakeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/snake/SnakeGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/Testing/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Canary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/spaceInvaders/Circle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,17 +70,44 @@
       <recent name="C:\Users\DCV\IdeaProjects\Games\testdata" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="at.ran.games.Testing" />
       <recent name="at.ran.games.spaceInvaders" />
       <recent name="at.ran.games.snowworld" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test1">
+  <component name="RunManager" selected="Application.SpaceInvaders (1)">
     <configuration name="BigImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.newdawn.slick.tests.BigImageTest" />
       <module name="Slick2DTemplate" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.newdawn.slick.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Birds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.ran.games.TropcialBirds.Birds" />
+      <module name="Slick2DTemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.ran.games.TropcialBirds.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Parakeet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.ran.games.TropcialBirds.Parakeet" />
+      <module name="Slick2DTemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.ran.games.TropcialBirds.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,39 +180,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StarTrek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="at.ran.games.firstgame.StarTrek" />
-      <module name="Slick2DTemplate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.ran.games.firstgame.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="at.ran.games.Testing.Test1" />
-      <module name="Slick2DTemplate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.ran.games.Testing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test1" />
         <item itemvalue="Application.SpaceInvaders (1)" />
+        <item itemvalue="Application.Birds" />
+        <item itemvalue="Application.Parakeets" />
         <item itemvalue="Application.BigImageTest" />
         <item itemvalue="Application.SpaceInvaders" />
-        <item itemvalue="Application.StarTrek" />
       </list>
     </recent_temporary>
   </component>
