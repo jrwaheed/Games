@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Better Understanding">
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/LeftCircle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/RightCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/movement/LeftMoveStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/MethodForTropicalBirds/BirdMethods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Cannonball.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Circle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Ellipse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Ellipse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Rocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/StarTrek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/StarTrek.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623083982207</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Check hear (package: firstgameVerer, class: StarTrek) for a clear understanding of Interface Actors. Comments on line 54.">
+      <created>1623086472931</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1623086472931</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,7 +374,8 @@
     <MESSAGE value="Better Understanding" />
     <MESSAGE value="still issue" />
     <MESSAGE value="back on track" />
-    <option name="LAST_COMMIT_MESSAGE" value="back on track" />
+    <MESSAGE value="Check hear (package: firstgameVerer, class: StarTrek) for a clear understanding of Interface Actors. Comments on line 54." />
+    <option name="LAST_COMMIT_MESSAGE" value="Check hear (package: firstgameVerer, class: StarTrek) for a clear understanding of Interface Actors. Comments on line 54." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Games$StarTrek.ic" NAME="StarTrek Coverage Results" MODIFIED="1621540271235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
