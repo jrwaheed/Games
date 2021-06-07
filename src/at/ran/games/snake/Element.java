@@ -7,6 +7,7 @@ import java.util.ArrayList;
 
 public class Element implements Actor{
     private int x, y;
+    private Element next;
     private ArrayList<Element> elementArrayList;
 
 
@@ -36,5 +37,21 @@ public class Element implements Actor{
 
     public int getY() {
         return y;
+    }
+
+    public Element getNext() {
+        return next;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public void setNext(Element next) {
+        this.next = next;
     }
 }
