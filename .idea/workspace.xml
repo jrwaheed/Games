@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Better Understanding">
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Cannonball.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Ellipse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Rocket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/StarTrek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/LeftCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/RightCircle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/MethodForTropicalBirds/BirdMethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/snake/Element.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/snake/Element.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/snake/SnakeGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/snake/SnakeGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/MethodForTropicalBirds/BirdMethods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/TropcialBirds/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Cannonball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Cannonball.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Ellipse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Ellipse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/Rocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Rocket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/StarTrek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/StarTrek.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,12 +68,13 @@
       <recent name="C:\Users\DCV\IdeaProjects\Games\testdata" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="at.ran.games.firstgameVererbung.actors" />
       <recent name="at.ran.games.Testing" />
       <recent name="at.ran.games.spaceInvaders" />
       <recent name="at.ran.games.snowworld" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SnakeGame">
+  <component name="RunManager" selected="Application.StarTrek">
     <configuration name="BigImageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.newdawn.slick.tests.BigImageTest" />
       <module name="Slick2DTemplate" />
@@ -126,19 +128,6 @@
       </method>
     </configuration>
     <configuration name="SpaceInvaders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="at.ran.games.spaceInvadersbase.SpaceInvaders" />
-      <module name="Slick2DTemplate" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="at.ran.games.spaceInvadersbase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpaceInvaders" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="at.ran.games.spaceInvaders.SpaceInvaders" />
       <module name="Slick2DTemplate" />
       <extension name="coverage">
@@ -170,6 +159,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="at.ran.games.spaceInvaders.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StarTrek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="at.ran.games.firstgameVererbung.StarTrek" />
+      <module name="Slick2DTemplate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.ran.games.firstgameVererbung.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -179,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StarTrek" />
         <item itemvalue="Application.SnakeGame" />
         <item itemvalue="Application.SpaceInvaders (1)" />
         <item itemvalue="Application.Birds" />
         <item itemvalue="Application.BigImageTest" />
-        <item itemvalue="Application.SpaceInvaders" />
       </list>
     </recent_temporary>
   </component>
@@ -339,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622732018745</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="back on track">
+      <created>1623083982207</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1623083982207</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -367,7 +376,8 @@
     <MESSAGE value="New update" />
     <MESSAGE value="Better Understanding" />
     <MESSAGE value="still issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="still issue" />
+    <MESSAGE value="back on track" />
+    <option name="LAST_COMMIT_MESSAGE" value="back on track" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Games$StarTrek.ic" NAME="StarTrek Coverage Results" MODIFIED="1621540271235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

@@ -1,4 +1,4 @@
-package at.ran.games.firstgameVererbung;
+package at.ran.games.firstgameVererbung.actors;
 
 import org.newdawn.slick.*;
 import org.newdawn.slick.geom.Rectangle;

@@ -1,5 +1,6 @@
 package at.ran.games.firstgameVererbung;
 
+import at.ran.games.firstgameVererbung.actors.*;
 import org.newdawn.slick.*;
 
 import java.util.ArrayList;
@@ -20,29 +21,39 @@ public class StarTrek extends BasicGame {
         this.actorsList = new ArrayList<>();
 
         Random random = new Random();
-
+/*
         for (int i = 0; i < 10; i++) {
             Rectangle rectangle = new Rectangle(random.nextInt(600), random.nextInt(600), 50);
             actorsList.add(rectangle);
         }
-
-        for (int i = 0; i < 10; i++) {
+*/
+        for (int i = 0; i < 5; i++) {
             Circle circle = new Circle();
             actorsList.add(circle);
         }
 
-        for (int i = 0; i < 10; i++) {
-            Ellipse ellipse = new Ellipse(random.nextInt(600), random.nextInt(600));
-            actorsList.add(ellipse);
-        }
+        RightCircle rc1 = new RightCircle();
+        this.actorsList.add(rc1);
 
+        LeftCircle lc1 = new LeftCircle();
+        this.actorsList.add(lc1);
+/*
+        for (int i = 0; i < 10; i++) {
+            Ellipse ellipse = nel
         Rocket rocket = new Rocket();
         this.rocket = rocket;
         this.actorsList.add(rocket);
+       */
     }
+
 
     @Override
     public void update(GameContainer gameContainer, int delta) throws SlickException {
+
+
+        //HERE IS ONE OF THE ADVANTAGES OF CREATING ACTORS. ALL OF THESE SHAPES ARE NOW DEFINED AS 'ACTORS',
+        //WHICH MAKES IT POSSIBLE TO RUN THIS SINGLE LOOP FOR ALL OF THEM.
+
 
         for (Actor actor:this.actorsList) {
             actor.update(gameContainer, delta);
