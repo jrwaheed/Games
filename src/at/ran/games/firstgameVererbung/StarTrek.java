@@ -20,7 +20,7 @@ public class StarTrek extends BasicGame {
     public void init(GameContainer gameContainer) throws SlickException {
         this.actorsList = new ArrayList<>();
 
-        Random random = new Random();
+
 /*
         for (int i = 0; i < 10; i++) {
             Rectangle rectangle = new Rectangle(random.nextInt(600), random.nextInt(600), 50);
@@ -31,19 +31,25 @@ public class StarTrek extends BasicGame {
             Circle circle = new Circle();
             actorsList.add(circle);
         }
-
+/*
         RightCircle rc1 = new RightCircle();
         this.actorsList.add(rc1);
 
         LeftCircle lc1 = new LeftCircle();
         this.actorsList.add(lc1);
-/*
+   */
+        Random random = new Random();
         for (int i = 0; i < 10; i++) {
-            Ellipse ellipse = nel
+            Ellipse ellipse = new Ellipse(random.nextInt(800), random.nextInt(600));
+            this.actorsList.add(ellipse);
+        }
+ /*
         Rocket rocket = new Rocket();
         this.rocket = rocket;
         this.actorsList.add(rocket);
-       */
+
+  */
+
     }
 
 

@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Better Understanding">
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/movement/LeftMoveStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/movement/MoveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM_[Default_Changelist]/Cannonball.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM_[Default_Changelist]/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM_[Default_Changelist]/Rocket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM_[Default_Changelist]/SpaceInvaders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_50_PM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_57_PM_[Default_Changelist]/Cannonball.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_57_PM_[Default_Changelist]/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_57_PM_[Default_Changelist]/Rocket.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_57_PM_[Default_Changelist]/SpaceInvaders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_57_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_6_2_2021_2_57_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/StarTrek.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/StarTrek.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/actors/Ellipse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/actors/Ellipse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/actors/LeftCircle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/actors/LeftCircle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/StarTrek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/StarTrek.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Ellipse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Ellipse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/movement/LeftMoveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/movement/LeftMoveStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -345,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623086472931</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="move strategy">
+      <created>1623087049514</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1623087049514</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -375,7 +400,8 @@
     <MESSAGE value="still issue" />
     <MESSAGE value="back on track" />
     <MESSAGE value="Check hear (package: firstgameVerer, class: StarTrek) for a clear understanding of Interface Actors. Comments on line 54." />
-    <option name="LAST_COMMIT_MESSAGE" value="Check hear (package: firstgameVerer, class: StarTrek) for a clear understanding of Interface Actors. Comments on line 54." />
+    <MESSAGE value="move strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="move strategy" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Games$StarTrek.ic" NAME="StarTrek Coverage Results" MODIFIED="1621540271235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

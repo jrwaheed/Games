@@ -1,36 +1,25 @@
 package at.ran.games.firstgameVererbung.actors;
 
+import at.ran.games.firstgameVererbung.movement.LeftMoveStrategy;
+import at.ran.games.firstgameVererbung.movement.MoveStrategy;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 
-import java.util.Random;
-
 public class Ellipse implements Actor {
-    private float x,y;
-    private float speed;
+    private MoveStrategy MoveStrategy;
 
     public Ellipse(int x, int y) {
-        Random random = new Random();
-        this.x = random.nextInt(800);
-        this.y = random.nextInt(600);
-        this.speed = random.nextInt(100);
+        this.MoveStrategy = new LeftMoveStrategy(x,y,10f);
     }
 
     @Override
     public void render(Graphics graphics) {
-        graphics.drawOval(this.x, this.y, 20, 100);
+        graphics.drawOval(MoveStrategy.getX(), MoveStrategy.getY(), 50, 10);
     }
 
     @Override
     public void update(GameContainer gameContainer, int delta) {
-        Random random = new Random();
-        this.y += (float)delta/this.speed;
-        this.x += (float)delta/this.speed;
-        if(this.y > 600 || this.x >800) {
-            this.x = random.nextInt(800);
-            this.y = random.nextInt(600);
-
-        }
-
+        this.MoveStrategy.update(delta);
     }
+
 }
