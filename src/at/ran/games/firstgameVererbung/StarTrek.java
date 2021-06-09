@@ -1,6 +1,9 @@
 package at.ran.games.firstgameVererbung;
 
 import at.ran.games.firstgameVererbung.actors.*;
+import at.ran.games.firstgameVererbung.movement.LeftMoveStrategy;
+import at.ran.games.firstgameVererbung.movement.MoveStrategy;
+import at.ran.games.firstgameVererbung.movement.RightMoveStrategy;
 import org.newdawn.slick.*;
 
 import java.util.ArrayList;
@@ -38,18 +41,24 @@ public class StarTrek extends BasicGame {
         LeftCircle lc1 = new LeftCircle();
         this.actorsList.add(lc1);
    */
-        Random random = new Random();
-        for (int i = 0; i < 10; i++) {
-            Ellipse ellipse = new Ellipse(random.nextInt(800), random.nextInt(600));
-            this.actorsList.add(ellipse);
-        }
+        MoveStrategy rms1 = new RightMoveStrategy(50,50,10f);
+        MoveStrategy lms = new LeftMoveStrategy(100,100,10f);
+        MoveStrategy rms2 = new LeftMoveStrategy(400,400,20f);
+
+
+            RectangleFilled rf = new RectangleFilled(lms);
+            Ellipse el1 = new Ellipse(rms1);
+            Ellipse el2 = new Ellipse(lms);
+            Rectangle r1 = new Rectangle(rms2);
+            this.actorsList.add(el1);
+            this.actorsList.add(el2);
+            this.actorsList.add(r1);
+            this.actorsList.add(rf);
  /*
         Rocket rocket = new Rocket();
         this.rocket = rocket;
         this.actorsList.add(rocket);
-
   */
-
     }
 
 
