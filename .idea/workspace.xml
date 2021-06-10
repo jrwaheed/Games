@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="Better Understanding">
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/AbstractMovableActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/CollisionActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/RectangleFilled.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/movement/RightMoveStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/StarTrek.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/StarTrek.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/actors/Ellipse.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/actors/Ellipse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/actors/Rectangle$DIRECTION.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/actors/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/at/ran/games/firstgameVererbung/actors/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/StarTrek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/StarTrek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Ellipse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Ellipse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/ran/games/firstgameVererbung/actors/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Slick2DTemplate/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Slick2DTemplate/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Campus-Basics/src/at/ran/cc/OOP" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -371,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1623253761171</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Abstract">
+      <created>1623263165399</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1623263165399</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -403,7 +398,8 @@
     <MESSAGE value="Check hear (package: firstgameVerer, class: StarTrek) for a clear understanding of Interface Actors. Comments on line 54." />
     <MESSAGE value="move strategy" />
     <MESSAGE value="Movement Strategy" />
-    <option name="LAST_COMMIT_MESSAGE" value="Movement Strategy" />
+    <MESSAGE value="Abstract" />
+    <option name="LAST_COMMIT_MESSAGE" value="Abstract" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Games$StarTrek.ic" NAME="StarTrek Coverage Results" MODIFIED="1621540271235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
